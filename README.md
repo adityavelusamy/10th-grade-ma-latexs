@@ -1,4 +1,6 @@
 # 2024-2025 Math Academy LaTeX Homework Templates
+## About
+For 10th grade math academy we are not provided TeX files for homework, and I found it inconvient to keep switching files so I just typed it up ¯\_(ツ)_/¯. I made it avaliable to everyone cause why not :D
 ## Unit 1: Combinatorics
 ### Week 1: Counting Principles
 [tex](Unit%201/Week%201/10.1.1.tex)  
