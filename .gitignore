@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.DS_store
+/Conceptdiscussions
+/Conceptdiscussions/*
+/RandomCalculations
+/RandomCalculations/*
+!.gitignore
+.DS_Store
+.DS_Store
