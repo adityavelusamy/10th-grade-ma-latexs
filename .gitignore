@@ -1,6 +1,9 @@
 *.aux
 *.log
 *.DS_store
+*.synctex.gz
+*.fls
+*.fdb_latexmk
 /Conceptdiscussions
 /Conceptdiscussions/*
 /RandomCalculations
