@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{graphicx, fullpage, amsmath, amsthm, amsfonts} % Required for inserting images
+\usepackage[utf8]{inputenc}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\subgroup}{\subseteq}
+\title{Latex Homework 10th Grade \\ Unit 3 - Abstract Algebra - Group Homomorphisms \\ Week 1 - Examples and Definitions}
+\author{Dr. Chapman and Dr. Rupel}
+\date{\today}
+\begin{document}
+\maketitle
+\section{}
+Gallian Ch 3.30:\\
+Prove that the dihedral group of order 6 does not have a subgroup of order 4.\\
+\begin{proof}
+Say we $H$ is the subgroup of $D_3$ of order 4. If $\rho\in H$, there are too many elements in $H$. If $\rho \not\in H$, then $H = \{Id.,\tau ,\tau\rho, \tau\rho^2\}.$ However, $\tau \cdot \tau\rho = \rho$ but $\rho \not\in H$. Therefore, $H$ is not a subgroup of $D_3$ with order 4.
+\end{proof}
+\section{}
+Gallian Ch 1-4 Suplement, problem 41, page 98:\\
+Give an example of a group $G$ with infinitely many distinct subgroups $H_1$, $H_2$, $H_3$, . . . such that $H_1 \subgroup H_2 \subgroup H_3 \subgroup \dots$\\
+\[ ( \QQ , +) \subgroup (\QQ[\sqrt{2}] , +) \subgroup (\QQ[\sqrt{2}, \sqrt{3}] , +) \subgroup \dots \subgroup (\RR,+)\]
+\section{}
+Gallian Ch 10.7:
+If $\phi$ is a homomorphism from $G$ to $H$ and $\sigma$ is a homomorphism from $H$ to $K$, show that $\sigma\phi$ is a homo-
+morphism from $G$ to $K$. How are Ker$\phi$ and Ker$\sigma\phi$ related? If $\phi$ and $\sigma$ are onto and $G$ is finite, describe [ker($\sigma\phi$) : ker($\phi$)] in terms of $|H|$ and $|K|$.\\
+ker($\phi$) = $\{a | \phi(a)=0\}$\\
+ker($\sigma\phi$) = $\{a | \sigma\phi(a)=0\}$\\
+ker($\sigma\phi$) $\subgroup$ ker($\phi$)\\
+ker($\sigma\phi$) : ker($\phi$)] $ = \frac{|\text{ker(}\sigma\phi\text{)}|}{|\text{ker(}\phi\text{)}|} = \frac{|K|/|G|}{|H|/|G|} = \frac{|K|}{|H|}$
+\end{document}

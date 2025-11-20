@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{graphicx, fullpage, amsmath, amsthm, amsfonts} % Required for inserting images
+\usepackage[utf8]{inputenc}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\subgroup}{\subseteq}
+\newcommand{\normsubgroup}{\trianglelefteq}
+\title{Latex Homework 10th Grade \\ Unit 3 - Abstract Algebra - Group Homomorphisms \\ Week 3 - Quotients and Isomorphism Theorems}
+\author{Dr. Chapman and Dr. Rupel}
+\date{\today}
+\begin{document}
+\maketitle
+\section{}
+Prove that if $N \normsubgroup G$ and $S \leq G$, then $S \cap N \normsubgroup S$. This is used in part 2.\\
+Assume $N \normsubgroup G$ and $S \leq G$.\\
+$n\in S\cap N, s\in S$\\
+$sns^{-1}\in S$, cause it's closed.\\
+$sns^{-1}\in N$, cause all elements of $S$ are in $G$ meaning it's normal to $N$. Therefore,\\
+\[S \cap N \normsubgroup S\]
+\section{}
+Prove the second isomorphism theorem: If $N \normsubgroup G$, and $S \leq G$, then $S/(N \cap S) \cong SN/N$.\\
+Assume $N \normsubgroup G$ and $S \leq G$.\\
+$s_3,s_2\in S, s_2(N\cap S)\\ \phi(s_2(N\cap S))=s_2N$\\
+$s_2(N\cap S) = s_3(N\cap S)$\\
+$s_2=s_3n, n\in N \cap S$\\
+$s_2N=s_3N$\\
+$\phi(s_2(N\cap S)) = \phi(s_3(N\cap S))$\\
+$n=s^{-1}_{3}s_2$\\
+So $n\in S$ cuase is product of 2 elements of $S$, so injective. Therefore, $S/(N \cap S) \cong SN/N$.
+\section{}
+Prove the third isomorphism theorem: If $A \normsubgroup B \normsubgroup C$ and $A \normsubgroup C$ then $A/B \cong (A/C)/(B/C)$.\\
+Assume $A \normsubgroup B \normsubgroup C$ and $A \normsubgroup C$\\
+Let $\phi : A/C \rightarrow A/B$ given by $\phi(aC)=aB$\\
+$(A/C) / ker(\phi) \cong Im(\phi)$\\
+$ker(\phi)=\{aC|\phi(aC)=B\}=\{aC|aB=B\}=\{aC|a\in B\}=\{bC\}$\\
+$\phi(aC)=aB=Im(\phi)$\\
+$A/B\cong (A/C)/(B/C)$
+\end{document}
